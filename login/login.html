@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>login UI</title>
+    <!--导入CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--导入jquery-->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <!--导入自己的js-->
+    <script src="js/login.js"></script>
+    <script src="js/change.js"></script>
+</head>
+
+<body>
+    <!--背景图片-->
+    <div id="picDiv"></div>
+    <!--登陆注册界面-->
+    <div class="box">
+
+        <h2>用户登陆</h2>
+
+        <form onsubmit="">
+            <div class="inputBox">
+                <input type="text" id="user" name="user" maxlength="16" required>
+                <label>用户名</label>
+            </div>
+
+            <div class="inputBox">
+                <input type="password" id="pass" name="pass" maxlength="16" required>
+                <label>密码</label>
+            </div>
+
+            <center>
+                <input type="button" id="login" value="登陆" onclick="check()">
+
+                <div class="inputBox2">
+                    <label>没有账号？</label>
+                    <a href="javascript:void(0)" id="link" onclick="change()">Register</a>
+                </div>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>
